@@ -1,5 +1,4 @@
 ssh-add
-fortune -s | cowsay
 
 # Fire up bash prompt if it exists, if not prompt me to install it.
 if [ -f "$(brew --prefix bash-git-prompt)/share/gitprompt.sh" ]; then
