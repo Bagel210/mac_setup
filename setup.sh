@@ -96,3 +96,7 @@ cp ~/Dropbox/id_rsa.pub ~/.ssh
 # Uses apple script to switch to the dark theme
 osascript -e 'tell application "System Events" to tell appearance preferences to set dark mode to not dark mode'
 
+
+# Install Oh My Zsh
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+
