@@ -3,14 +3,6 @@
 # Set Hostname
 sudo hostname whoami
 
-echo "Please enter your name"
-read name
-git config --global user.name "$name"
-
-echo "Input Github email address"
-read email
-git config --global user.email "$email"
-
 # Install Pip
 sudo easy_install pip
 
@@ -69,29 +61,6 @@ dockutil --add /Applications/Sublime\ Text.app
 dockutil --add /Applications/System\ Preferences.app
 dockutil --add ~/Downloads --view grid --display folder
 dockutil --add /Applications --view grid --display folder
-
-# Launch Dropbox to enable login and setup
-/Applications/Dropbox.app/Contents/MacOS/Dropbox &
-
-# Wait for dropbox to begin sync
-while [ ! -s ~/Dropbox/id_rsa.enc ] ;
-do
-    sleep 1
-done
-
-while [ ! -s ~/Dropbox/id_rsa.pub ] ;
-do
-    sleep 1
-done
-
-# Decrypt private key
-mkdir -p ~/.ssh
-openssl enc -d -aes-256-cbc -in ~/Dropbox/id_rsa.enc -out ~/.ssh/id_rsa
-chmod 0600 ~/.ssh/id_rsa
-cp ~/Dropbox/id_rsa.pub ~/.ssh
-
-# Copy .dotfiles
-./update_dotfiles.sh
 
 # Uses apple script to switch to the dark theme
 osascript -e 'tell application "System Events" to tell appearance preferences to set dark mode to not dark mode'
