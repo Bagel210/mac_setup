@@ -62,6 +62,10 @@ dockutil --add /Applications/System\ Preferences.app
 dockutil --add ~/Downloads --view grid --display folder
 dockutil --add /Applications --view grid --display folder
 
+
+# Install Docker
+brew install docker docker-compose
+
 # Uses apple script to switch to the dark theme
 osascript -e 'tell application "System Events" to tell appearance preferences to set dark mode to not dark mode'
 
