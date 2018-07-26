@@ -59,7 +59,9 @@ dockutil --add /Applications/Messages.app
 dockutil --add /Applications/Mail.app
 dockutil --add /Applications/Calendar.app
 dockutil --add /Applications/Notes.app
+dockutil --add /Applications/Slack.app
 dockutil --add /Applications/Safari.app
+dockutil --add /Applications/Google\ Chrome.app
 dockutil --add /Applications/iTunes.app
 dockutil --add /Applications/PyCharm.app
 dockutil --add /Applications/PhpStorm.app
