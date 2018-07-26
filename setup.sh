@@ -15,9 +15,16 @@ sudo pip install virtualenv
 # Add Cask
 brew tap caskroom/cask
 
+# Install Mysql 5.6
 brew search mysql
 brew install mysql@5.6
 brew link mysql@5.6 --force
+
+# Install Python
+brew install python
+
+# Install Docker
+brew install docker docker-compose
 
 function install_cask_with_retry {
     brew cask install $1
@@ -30,15 +37,12 @@ function install_cask_with_retry {
 
 # Install Apps
 install_cask_with_retry dropbox
+install_cask_with_retry slack
 install_cask_with_retry google-chrome
 install_cask_with_retry pycharm
 install_cask_with_retry phpstorm
 install_cask_with_retry sequel-pro
 install_cask_with_retry sublime-text
-install_cask_with_retry iterm2
-install_cask_with_retry mamp
-install_cask_with_retry vagrant
-install_cask_with_retry virtualbox
 install_cask_with_retry flux
 install_cask_with_retry transmission
 
@@ -57,7 +61,6 @@ dockutil --add /Applications/Calendar.app
 dockutil --add /Applications/Notes.app
 dockutil --add /Applications/Safari.app
 dockutil --add /Applications/iTunes.app
-dockutil --add /Applications/iTerm.app
 dockutil --add /Applications/PyCharm.app
 dockutil --add /Applications/PhpStorm.app
 dockutil --add /Applications/Sequel\ Pro.app
@@ -66,9 +69,6 @@ dockutil --add /Applications/System\ Preferences.app
 dockutil --add ~/Downloads --view grid --display folder
 dockutil --add /Applications --view grid --display folder
 
-
-# Install Docker
-brew install docker docker-compose
 
 # Uses apple script to switch to the dark theme
 osascript -e 'tell application "System Events" to tell appearance preferences to set dark mode to not dark mode'
