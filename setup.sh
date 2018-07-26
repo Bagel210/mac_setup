@@ -15,6 +15,10 @@ sudo pip install virtualenv
 # Add Cask
 brew tap caskroom/cask
 
+brew search mysql
+brew install mysql@5.6
+brew link mysql@5.6 --force
+
 function install_cask_with_retry {
     brew cask install $1
     if [ $? -ne 0 ]
