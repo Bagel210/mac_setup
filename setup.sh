@@ -21,7 +21,7 @@ brew install mysql@5.6
 brew link mysql@5.6 --force
 
 # Install Python
-brew install python
+brew install https://raw.githubusercontent.com/Homebrew/homebrew-core/f2a764ef944b1080be64bd88dca9a1d80130c558/Formula/python.rb
 
 # Install Docker
 brew install docker docker-compose
