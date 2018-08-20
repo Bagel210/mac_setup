@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Set Hostname
-sudo hostname whoami
+sudo hostname `whoami`
 
 # Install Pip
 sudo easy_install pip
