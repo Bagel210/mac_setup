@@ -18,6 +18,10 @@ brew tap caskroom/cask
 # Install Python 3.6
 brew install https://raw.githubusercontent.com/Homebrew/homebrew-core/f2a764ef944b1080be64bd88dca9a1d80130c558/Formula/python.rb
 
+# Install NPM
+brew install npm
+brew install bower
+
 # Install mysql-connector
 brew install mysql-connector-c
 
@@ -25,6 +29,7 @@ echo "Please find your mysql_config and fix it using this - https://pypi.org/pro
 
 # Isntall LibXML - 
 brew install libxmlsec1
+brew install libxml2
 
 function install_cask_with_retry {
     brew cask install $1
