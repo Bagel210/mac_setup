@@ -39,7 +39,6 @@ install_cask_with_retry phpstorm
 install_cask_with_retry sequel-pro
 install_cask_with_retry sublime-text
 install_cask_with_retry flux
-install_cask_with_retry transmission
 
 
 # Install DockUtil
