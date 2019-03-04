@@ -15,11 +15,6 @@ sudo pip install virtualenv
 # Add Cask
 brew tap caskroom/cask
 
-# Install Mysql 5.6
-brew search mysql
-brew install mysql@5.6
-brew link mysql@5.6 --force
-
 # Install Python
 brew install https://raw.githubusercontent.com/Homebrew/homebrew-core/f2a764ef944b1080be64bd88dca9a1d80130c558/Formula/python.rb
 
