@@ -15,11 +15,16 @@ sudo pip install virtualenv
 # Add Cask
 brew tap caskroom/cask
 
-# Install Python
+# Install Python 3.6
 brew install https://raw.githubusercontent.com/Homebrew/homebrew-core/f2a764ef944b1080be64bd88dca9a1d80130c558/Formula/python.rb
 
-# Install Docker
-brew install docker docker-compose
+# Install mysql-connector
+brew install mysql-connector-c
+
+echo "Please find your mysql_config and fix it using this - https://pypi.org/project/mysqlclient/"
+
+# Isntall LibXML - 
+brew install libxmlsec1
 
 function install_cask_with_retry {
     brew cask install $1
@@ -72,4 +77,7 @@ osascript -e 'tell application "System Events" to tell appearance preferences to
 
 # Install Oh My Zsh
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+
+#Get the docker client
+open "https://docs.docker.com/docker-for-mac/install"
 
