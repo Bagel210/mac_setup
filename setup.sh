@@ -50,6 +50,8 @@ install_cask_with_retry sequel-pro
 install_cask_with_retry sublime-text
 install_cask_with_retry visual-studio-code
 install_cask_with_retry flux
+install_cask_with_retry postman
+install_cask_with_retry spotify
 
 # Install Code Plugins
 code --install-extension msjsdiag.debugger-for-chrome
@@ -71,7 +73,7 @@ dockutil --add /Applications/Notes.app
 dockutil --add /Applications/Slack.app
 dockutil --add /Applications/Safari.app
 dockutil --add /Applications/Google\ Chrome.app
-dockutil --add /Applications/iTunes.app
+dockutil --add /Applications/Spotify.app
 dockutil --add /Applications/PyCharm.app
 dockutil --add /Applications/PhpStorm.app
 dockutil --add /Applications/Sequel\ Pro.app
