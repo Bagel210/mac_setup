@@ -48,7 +48,12 @@ install_cask_with_retry pycharm
 install_cask_with_retry phpstorm
 install_cask_with_retry sequel-pro
 install_cask_with_retry sublime-text
+install_cask_with_retry visual-studio-code
 install_cask_with_retry flux
+
+# Install Code Plugins
+code --install-extension msjsdiag.debugger-for-chrome
+code --install-extension esbenp.prettier-vscode
 
 
 # Install DockUtil
